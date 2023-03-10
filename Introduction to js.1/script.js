@@ -87,11 +87,3 @@ console.log(`Кількість секунд в годині: ${secondsPerHour}`
 console.log(`Кількість секунд в добі: ${secondsPerDay}`);
 console.log(`Кількість секунд в місяці: ${secondsPerMonth}`);
 
-/*
-Створіть веб-додаток для визначення купе в плацкартному вагоні за номером квитка. Користувач вводить номер місця, вивести йому номер купе, тип місця - бічне чи ні, верхнє чи нижнє. 
-*/
-
-const enteredTicketNumber = prompt('Entered Your tickets number:', '');
-const ticketNumber = parseInt(enteredTicketNumber);
-
-ticketNumber % 2 === 0 ? alert('Your place is UP') : alert('Your place is DOWN');
