@@ -1,4 +1,4 @@
-alert('Mykola');
+console.log('Mykola');
 
 /*
 a) оголосіть дві змінні;
