@@ -10,8 +10,8 @@ e) виведіть на екран значення змінних.
 
 let book;
 let magazine;
-book = "Adventures";
-magazine = "Scientific";
+book = 'Adventures';
+magazine = 'Scientific';
 console.log(book);
 console.log(magazine);
 book = magazine;
@@ -26,7 +26,7 @@ let myObj = {
   age: 37,
   ukrainian: true,
   height,
-  weight: null
+  weight: null,
 };
 console.log(typeof myObj.name);
 console.log(typeof myObj.age);
@@ -73,7 +73,7 @@ console.log(`${trr} type of : ${typeof trr}`);
 const login = prompt('Enter Your email or login:', '');
 const password = prompt('Enter Password', '');
 
-alert (`Dear User, your email is ${login}, your password is ${password}`);
+alert(`Dear User, your email is ${login}, your password is ${password}`);
 
 /* 
 Напишіть скрипт, який вираховує кількість секунд в годині, в добі, в місяці, записує результати в відповідні змінні, і виводить їх значення на екран.
@@ -86,4 +86,3 @@ const secondsPerMonth = 30 * secondsPerDay;
 console.log(`Кількість секунд в годині: ${secondsPerHour}`);
 console.log(`Кількість секунд в добі: ${secondsPerDay}`);
 console.log(`Кількість секунд в місяці: ${secondsPerMonth}`);
-

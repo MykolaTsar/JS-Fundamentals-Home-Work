@@ -7,17 +7,17 @@ let A;
 let B;
 let C;
 if (A < B && B < C) {
-    console.log("A < B < C is true");
+  console.log('A < B < C is true');
 } else {
-    console.log("A < B < C is false");
+  console.log('A < B < C is false');
 }
 A = 2;
 B = 4;
 C = 10;
 if (A < B && B < C) {
-    console.log("A < B < C is true");
+  console.log('A < B < C is true');
 } else {
-    console.log("A < B < C is false");
+  console.log('A < B < C is false');
 }
 
 /*
@@ -31,11 +31,11 @@ let res1 = `${x}${y}`; // Допишіть код, необхідно викор
 console.log(res1); // ""12""
 console.log(typeof res1); // ""string""
 
-let res2 = `${!!x}${y}`;// Допишіть код, необхідно використовувати змінні x і y
+let res2 = `${!!x}${y}`; // Допишіть код, необхідно використовувати змінні x і y
 console.log(res2); // ""true2""
 console.log(typeof res2); // ""string""
 
-let res3 = !!(x + y);// Допишіть код, необхідно використовувати змінні x і y
+let res3 = !!(x + y); // Допишіть код, необхідно використовувати змінні x і y
 console.log(res3); // true
 console.log(typeof res3); // ""boolean""
 
@@ -53,9 +53,9 @@ const age = +isAdult;
 if (age < 1 || isNaN(isAdult)) {
   alert('Invalid Input');
 } else if (age < 18) {
-    alert("U are so young yet!");
+  alert('U are so young yet!');
 } else {
-    alert('U are adult!');
+  alert('U are adult!');
 }
 
 /*
@@ -67,7 +67,7 @@ let data = {};
 
 //рахуємо кількість входжень в обєкт
 for (let number of arr) {
-    data[number] = data[number] ? data[number] + 1 : 1;
+  data[number] = data[number] ? data[number] + 1 : 1;
 }
 console.log(data);
 
@@ -86,12 +86,12 @@ let newArr = [count];
 
 // Видаляємо всі входження цього числа із поточного масиву
 for (let i = arr.length - 1; i >= 0; i--) {
-    if (arr[i] == count) {
-      arr.splice(i, 1);
-    }
+  if (arr[i] == count) {
+    arr.splice(i, 1);
   }
+}
 
-console.log(arr) // [4, 2, 1, 6, 3, 2]
+console.log(arr); // [4, 2, 1, 6, 3, 2]
 
 /*
 5. 
@@ -105,22 +105,21 @@ const a = prompt('Enter the length of the 1st side of the triangle', '');
 const b = prompt('Enter the length of the 2nd side of the triangle', '');
 const c = prompt('Enter the length of the 3rd side of the triangle', '');
 
-
 const aa = +a;
 const bb = +b;
 const cc = +c;
 if (aa <= 0 || isNaN(aa) || bb <= 0 || isNaN(bb) || cc <= 0 || isNaN(cc)) {
   alert(`incorect input!`);
 } else {
-const s = (aa + bb + cc) / 2;
-// console.log(s);
-const area = Math.sqrt(s * (s - aa) * (s - bb) * (s - cc));
-// console.log(area);
-const roundArea = area.toFixed(3);
-console.log(roundArea);
+  const s = (aa + bb + cc) / 2;
+  // console.log(s);
+  const area = Math.sqrt(s * (s - aa) * (s - bb) * (s - cc));
+  // console.log(area);
+  const roundArea = area.toFixed(3);
+  console.log(roundArea);
 
-const rightTriangle = Math.pow(cc, 2) === Math.pow(aa, 2) + Math.pow(bb, 2);
-console.log(`Our triangle is right triangle: ${rightTriangle}`);
+  const rightTriangle = Math.pow(cc, 2) === Math.pow(aa, 2) + Math.pow(bb, 2);
+  console.log(`Our triangle is right triangle: ${rightTriangle}`);
 }
 
 /*
