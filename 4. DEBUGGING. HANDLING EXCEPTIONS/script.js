@@ -3,8 +3,6 @@
 
 const sumSliceArray = (arr, first, second) => {
   try {
-    first = parseInt(first);
-    second = parseInt(second);
     if (isNaN(first) || isNaN(second)) {
       throw "Ви ввели не числа";
     }
@@ -71,7 +69,7 @@ console.log(calcRectangleArea(2, 'a')); */
 /* class MonthException extends Error {
   constructor(message) {
     super(message);
-    this.name = "MonthException";
+    this.name = 'MonthException';
   }
 }
 
