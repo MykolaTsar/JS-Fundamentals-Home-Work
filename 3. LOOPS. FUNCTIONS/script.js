@@ -3,22 +3,16 @@
 
 const arr = [2, 3, 4, 5, 6, 7, 3];
 
-//розвя'зок за допомогою циклу
-const compact2 = () => {
+const compact = (arr) => {
   const value = [];
-  for (const i of arr) {
-    value.push(i);
-  }
+  arr.map(element => {
+  if(value.indexOf(element) === -1) {
+    value.push(element);
+    }
+  });
   return value;
 }
-//розв'язок за допомогою  методу map()
-const compact = () => arr.map(x => x);
-
-const arr2 = compact ();
-const arr3 = compact2 ();
-console.log(arr2);
-console.log(arr3);
-
+console.log(compact([2, 3, 4, 5, 6, 7, 3]))
 // 2.Написати функцію createArray(start, end), яка приймає на вхід 2 параметри: початкове значення, кінцеве значення, а на виході отримує масив із діапазоном цих значень (реалізувати достатньо лише із числовими значеннями)
 
 // розв'язок за допомогою циклу
