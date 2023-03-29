@@ -8,9 +8,9 @@ const form = document.querySelector('.discounts');
 
 color.addEventListener('click', (event) => changeColor(event));
 size.addEventListener('click', (event) => changeSize(event));
-color.addEventListener('click', (ev) => changePrice(ev));
-size.addEventListener('click', (ev) => changePrice(ev));
-form.addEventListener('click', (ev) => changePrice(ev));
+color.addEventListener('click', () => changePrice());
+size.addEventListener('click', () => changePrice());
+form.addEventListener('click', () => changePrice());
 
 function changeColor(event) {
   if (event.target.classList.contains('color')) {
@@ -28,7 +28,7 @@ function changeSize(event) {
   }
 }
 
-function changePrice(ev) {
+function changePrice() {
   const checkbox = document.querySelector('.disc');
   const priceDiscount = parseInt(checkbox.getAttribute('data-price-d'));
   const activeColor = document.querySelector('.colors .active');
