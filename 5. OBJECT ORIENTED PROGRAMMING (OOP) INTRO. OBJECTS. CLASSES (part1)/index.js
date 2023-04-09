@@ -6,7 +6,7 @@
 //- Визначте статичний метод, який приймає координати центра кола, його радіус та повертає об'єкт кола із заданими параметрами;
 //- Визначте метод перевірки попадання крапки до кола;
 //- Визначте метод перетворення поточного стану об'єкта на символьний рядок (toString()).
-class Circle {
+/* class Circle {
   constructor(centerX, centerY, radius) {
     this.centerX = centerX;
     this.centerY = centerY;
@@ -47,7 +47,7 @@ console.log(circle.getCircleObjCopy());
 console.log(Circle.getCircleStaticReturnCopy(1, 1, 5));
 console.log(circle.checkEnteringPointToCircle(2, 3));
 console.log(circle.checkEnteringPointToCircle(5, 10));
-console.log(circle.getCircleObjToString ());
+console.log(circle.getCircleObjToString ()); */
 
 //2.Напишіть функцію propsCount(currentObject), яка приймає об’єкт і визначає кількість властивостей цього об’єкта.
 /* let mentor = { 
@@ -74,7 +74,7 @@ console.log(ans); */
 //console.log(stud1.showFullName("Petrovych")); // Petrenko Petro Petrovych
 //console.log("Current course: " + stud1.showCourse()); //Current course: 4
 
-/* class Person {
+class Person {
   constructor(name, surname) {
     this.name = name;
     this.surname = surname;
@@ -105,7 +105,7 @@ class Student extends Person {
 
 const answ = new Student("Petro", "Petrenko", 2023);
 answ.showFullName("Petrovych");
-"Current course: " + answ.showCourse(); */
+"Current course: " + answ.showCourse();
 
 //4.А. Реалізувати клас, який описує простий маркер. У класі мають бути такі компоненти:
 //- поле, яке зберігає колір маркера;
