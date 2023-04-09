@@ -7,6 +7,7 @@
 
 
 $('h3').each(function() {
-  $(this).prev('div').insertBefore($(this));
+  let nextEl = $(this).next('div');
+  $(this).before(nextEl);
 });
 
