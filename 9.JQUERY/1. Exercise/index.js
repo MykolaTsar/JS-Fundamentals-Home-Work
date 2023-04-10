@@ -6,5 +6,9 @@
 //     <h2 class="head">header4<span>inner elem2</span></h2>
 //     <h2>header5</h2>
 
-$('.head').css('background', 'green');
-$('.inner').css('font-size', '35px');
+let $head = $('.head');
+console.log($head);
+let $inner = $head.find('.inner');
+console.log($inner);
+$head.css('background', 'green');
+$inner.css('font-size', '35px');
