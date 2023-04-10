@@ -4,7 +4,7 @@
 
 var arr = [];
 
-for (var i = 0; i <= 2; i++) {
+for (let i = 0; i <= 2; i++) {
   arr[i] = (function (j) {
       return function () {
       console.log(j);

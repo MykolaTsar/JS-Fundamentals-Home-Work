@@ -7,13 +7,13 @@
 // console.log(mul(null, "str", false, true)); // 0
 
 
-function mul(...arguments) {
-  return arguments.reduce((acc, element) => {
-    if (typeof element === "number") {
-      return acc * element;
-    }
-    return acc;
-  });
+function mul(...args) {
+  const numbers = args.filter((value) => typeof value === 'number');
+  console.log(numbers);
+  if (!numbers.length) return 0;
+  return numbers.reduce(
+    (acc, curEl) => acc * curEl
+  );
 }
 
 console.log(mul(1, "str", 2, 3, true));
